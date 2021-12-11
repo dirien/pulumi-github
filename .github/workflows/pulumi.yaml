@@ -39,9 +39,7 @@ jobs:
       - uses: pulumi/actions@v3
         with:
           command: up
-          args: -y
           stack-name: dev
-          comment-on-pr: true
           github-token: ${{ secrets.GITHUB_TOKEN }}
         env:
           PULUMI_ACCESS_TOKEN: ${{ secrets.PULUMI_ACCESS_TOKEN }}
