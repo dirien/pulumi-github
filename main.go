@@ -1,35 +1,82 @@
 package main
 
 import (
+	"fmt"
 	"github.com/pulumi/pulumi-github/sdk/v4/go/github"
 	"github.com/pulumi/pulumi/sdk/v3/go/pulumi"
 )
 
-func main() {
-	pulumi.Run(func(ctx *pulumi.Context) error {
-		octopusDeployHackathon, err := github.NewRepository(ctx, "octopus-deploy-hackathon", &github.RepositoryArgs{
-			Description:         pulumi.String("Hackathon Repository for Octopus Deploy"),
-			Name:                pulumi.String("octopus-deploy-hackathon"),
-			LicenseTemplate:     pulumi.String("apache-2.0"),
-			AllowSquashMerge:    pulumi.Bool(true),
-			AllowRebaseMerge:    pulumi.Bool(false),
-			AllowMergeCommit:    pulumi.Bool(false),
-			DeleteBranchOnMerge: pulumi.Bool(true),
-			GitignoreTemplate:   pulumi.String("Go"),
-		})
-		if err != nil {
-			return err
-		}
+func createGitHubRepository(ctx *pulumi.Context, create *Repository) error {
+	repoArgs := &github.RepositoryArgs{
+		Description:         pulumi.String(create.Description),
+		Name:                pulumi.String(create.Name),
+		LicenseTemplate:     pulumi.String(create.License),
+		AllowSquashMerge:    pulumi.Bool(true),
+		AllowRebaseMerge:    pulumi.Bool(false),
+		AllowMergeCommit:    pulumi.Bool(false),
+		DeleteBranchOnMerge: pulumi.Bool(true),
+		HasIssues:           pulumi.Bool(create.Issues),
+		HasWiki:             pulumi.Bool(create.Wiki),
+		HasProjects:         pulumi.Bool(create.Projects),
+		VulnerabilityAlerts: pulumi.Bool(create.VulnerabilityAlerts),
+		HasDownloads:        pulumi.Bool(create.Downloads),
+		Visibility:          pulumi.String(create.Visibility),
+	}
 
-		_, err = github.NewBranchProtection(ctx, "branchProtection", &github.BranchProtectionArgs{
-			RepositoryId:         octopusDeployHackathon.NodeId,
+	if len(create.Topics) > 0 {
+		repoArgs.Topics = pulumi.ToStringArray(create.Topics)
+	}
+
+	if create.GHPages != "" {
+		repoArgs.Pages = &github.RepositoryPagesArgs{
+			Source: &github.RepositoryPagesSourceArgs{
+				Branch: pulumi.String(create.GHPages),
+			},
+		}
+	}
+
+	if create.GitIgnoreTemplate != "" {
+		repoArgs.GitignoreTemplate = pulumi.String(create.GitIgnoreTemplate)
+	}
+	repository, err := github.NewRepository(ctx, create.Name, repoArgs)
+	if err != nil {
+		return err
+	}
+	if len(create.Collaborators) > 0 {
+		for _, collaborator := range create.Collaborators {
+			_, err := github.NewRepositoryCollaborator(ctx, fmt.Sprintf("collab-%s", create.Name), &github.RepositoryCollaboratorArgs{
+				Repository: repository.Name,
+				Username:   pulumi.String(collaborator),
+			})
+			if err != nil {
+				return err
+			}
+		}
+	}
+
+	if create.Visibility != "private" {
+		_, err = github.NewBranchProtection(ctx, fmt.Sprintf("branchProtection-%s", create.Name), &github.BranchProtectionArgs{
+			RepositoryId:         repository.NodeId,
 			Pattern:              pulumi.String("main"),
 			RequireSignedCommits: pulumi.Bool(true),
 		})
 		if err != nil {
 			return err
 		}
-		ctx.Export("repository", octopusDeployHackathon.Name)
+	}
+
+	ctx.Export(fmt.Sprintf("clone repository-%s", create.Name), repository.HttpCloneUrl)
+	return nil
+}
+
+func main() {
+	pulumi.Run(func(ctx *pulumi.Context) error {
+		for _, repo := range repos.Items {
+			err := createGitHubRepository(ctx, &repo)
+			if err != nil {
+				return err
+			}
+		}
 		return nil
 	})
 }
