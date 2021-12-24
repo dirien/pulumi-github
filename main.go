@@ -46,7 +46,7 @@ func createGitHubRepository(ctx *pulumi.Context, create *Repository) error {
 
 	if create.Labels != nil {
 		for _, label := range create.Labels {
-			_, err := github.NewIssueLabel(ctx, label.Name, &github.IssueLabelArgs{
+			_, err := github.NewIssueLabel(ctx, fmt.Sprintf("label-%s-%s", create.Name, label.Name), &github.IssueLabelArgs{
 				Color:       pulumi.String(label.Color),
 				Description: pulumi.String(label.Description),
 				Name:        pulumi.String(label.Name),

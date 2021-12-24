@@ -74,6 +74,11 @@ var (
 			Color:       "c5def5",
 			Description: "Documentation is missing or needs to be improved",
 		},
+		{
+			Name:        ":game_die: dependencies",
+			Color:       "a6cee3",
+			Description: "Dependencies need to be updated",
+		},
 	}
 
 	repos = &Repositories{
@@ -116,6 +121,14 @@ var (
 				Wiki:        true,
 				Topics:      []string{"ssh", "golang", "cli", "k3s"},
 				GHPages:     "gh-pages",
+			},
+			{
+				Name:        "pulumi-github",
+				Description: "Pulumi program to manage my GitHub repositories",
+				License:     "apache-2.0",
+				Visibility:  "public",
+				Topics:      []string{"pulumi", "github", "iac"},
+				Labels:      lables,
 			},
 		},
 	}
