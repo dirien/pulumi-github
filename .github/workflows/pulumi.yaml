@@ -5,6 +5,8 @@ on:
     tags:
       - '*'
   pull_request:
+    paths-ignore:
+      - '**/.github/'
 
 jobs:
   preview:

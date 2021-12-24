@@ -7,6 +7,7 @@ import (
 )
 
 func createGitHubRepository(ctx *pulumi.Context, create *Repository) error {
+
 	repoArgs := &github.RepositoryArgs{
 		Description:         pulumi.String(create.Description),
 		Name:                pulumi.String(create.Name),
@@ -42,6 +43,21 @@ func createGitHubRepository(ctx *pulumi.Context, create *Repository) error {
 	if err != nil {
 		return err
 	}
+
+	if create.Labels != nil {
+		for _, label := range create.Labels {
+			_, err := github.NewIssueLabel(ctx, label.Name, &github.IssueLabelArgs{
+				Color:       pulumi.String(label.Color),
+				Description: pulumi.String(label.Description),
+				Name:        pulumi.String(label.Name),
+				Repository:  repository.Name,
+			})
+			if err != nil {
+				return err
+			}
+		}
+	}
+
 	if len(create.Collaborators) > 0 {
 		for _, collaborator := range create.Collaborators {
 			_, err := github.NewRepositoryCollaborator(ctx, fmt.Sprintf("collab-%s", create.Name), &github.RepositoryCollaboratorArgs{

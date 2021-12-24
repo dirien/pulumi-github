@@ -15,13 +15,67 @@ type Repository struct {
 	Projects            bool
 	VulnerabilityAlerts bool
 	Downloads           bool
+	Labels              []Label
 }
 
+type Label struct {
+	Name        string
+	Description string
+	Color       string
+}
 type Repositories struct {
 	Items []Repository
 }
 
 var (
+	lables = []Label{
+		{
+			Name:        ":bug: bug",
+			Description: "Something isn't working",
+			Color:       "f29513",
+		},
+		{
+			Name:        ":dancers: duplicate",
+			Description: "This issue or pull request already exists",
+			Color:       "fef2c0",
+		},
+		{
+			Name:        ":sparkles: enhancement",
+			Description: "A new feature",
+			Color:       "7fc97f",
+		},
+		{
+			Name:        ":pray: help wanted",
+			Description: "Extra attention is needed",
+			Color:       "ffd92f",
+		},
+		{
+			Name:        ":no_entry_sign: invalid",
+			Description: "The issue or pull request is invalid",
+			Color:       "d7191c",
+		},
+		{
+			Name:        ":question: question",
+			Description: "Further information is requested",
+			Color:       "fdae61",
+		},
+		{
+			Name:        ":coffin: wontfix",
+			Description: "This will not be worked on",
+			Color:       "d73027",
+		},
+		{
+			Name:        ":hatching_chick: good first issue",
+			Description: "Good for newcomers",
+			Color:       "1b9e77",
+		},
+		{
+			Name:        ":memo: documentation",
+			Color:       "c5def5",
+			Description: "Documentation is missing or needs to be improved",
+		},
+	}
+
 	repos = &Repositories{
 		Items: []Repository{
 			{
@@ -43,6 +97,7 @@ var (
 				Description: "Test Repository",
 				License:     "apache-2.0",
 				Visibility:  "private",
+				Labels:      lables,
 			},
 			{
 				Name:          "gophercon-turkey-2021",
