@@ -3,8 +3,8 @@ module pulumi-github
 go 1.17
 
 require (
-	github.com/pulumi/pulumi-github/sdk/v4 v4.8.1
-	github.com/pulumi/pulumi/sdk/v3 v3.19.0
+	github.com/pulumi/pulumi-github/sdk/v4 v4.9.0
+	github.com/pulumi/pulumi/sdk/v3 v3.20.0
 )
 
 require (
