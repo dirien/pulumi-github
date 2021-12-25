@@ -140,6 +140,13 @@ var (
 				Topics:      []string{"infrastructure-as-code", "terraform", "iac"},
 				Labels:      lables,
 			},
+			{
+				Name:        "digitalocean-kubernetes-challenge",
+				Description: "Deploy a GitOps CI/CD implementation",
+				License:     "apache-2.0",
+				Visibility:  "private",
+				Topics:      []string{"kubernetes", "ci-cd", "gitops", "pulumi", "tekton"},
+			},
 		},
 	}
 )
