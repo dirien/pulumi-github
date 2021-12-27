@@ -144,7 +144,7 @@ var (
 				Name:        "digitalocean-kubernetes-challenge",
 				Description: "Deploy a GitOps CI/CD implementation",
 				License:     "apache-2.0",
-				Visibility:  "private",
+				Visibility:  "public",
 				Topics:      []string{"kubernetes", "ci-cd", "gitops", "pulumi", "tekton"},
 			},
 		},
