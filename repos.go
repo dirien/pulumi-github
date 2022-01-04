@@ -147,6 +147,13 @@ var (
 				Visibility:  "public",
 				Topics:      []string{"kubernetes", "ci-cd", "gitops", "pulumi", "tekton"},
 			},
+			{
+				Name:        "quick-bites",
+				Description: "Quick Bites of different technologies",
+				License:     "apache-2.0",
+				Visibility:  "public",
+				Topics:      []string{"quick-bites"},
+			},
 		},
 	}
 )
