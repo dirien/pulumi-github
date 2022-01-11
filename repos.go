@@ -154,6 +154,13 @@ var (
 				Visibility:  "public",
 				Topics:      []string{"quick-bites"},
 			},
+			{
+				Name:        "pulumi-scaleway",
+				Description: "Example of a Pulumi program to manage a Scaleway server",
+				License:     "apache-2.0",
+				Visibility:  "public",
+				Topics:      []string{"pulumi", "scaleway", "kubernetes"},
+			},
 		},
 	}
 )
