@@ -161,6 +161,13 @@ var (
 				Visibility:  "public",
 				Topics:      []string{"pulumi", "scaleway", "kubernetes"},
 			},
+			{
+				Name:        "vcluster-webinar",
+				Description: "Demo Repository for vcluster Webinar",
+				License:     "apache-2.0",
+				Visibility:  "public",
+				Topics:      []string{"vcluster", "kubernetes"},
+			},
 		},
 	}
 )
