@@ -163,7 +163,7 @@ var (
 			},
 			{
 				Name:        "vcluster-webinar",
-				Description: "Demo Repository for VCluster Webinar",
+				Description: "Demo Repository for vcluster Webinar",
 				License:     "apache-2.0",
 				Visibility:  "public",
 				Topics:      []string{"vcluster", "kubernetes"},
