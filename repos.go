@@ -168,6 +168,13 @@ var (
 				Visibility:  "public",
 				Topics:      []string{"vcluster", "kubernetes"},
 			},
+			{
+				Name:        "gcp-gke-iac",
+				Description: "Playing around with GCP",
+				License:     "apache-2.0",
+				Visibility:  "public",
+				Topics:      []string{"gcp", "kubernetes"},
+			},
 		},
 	}
 )
