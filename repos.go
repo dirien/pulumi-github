@@ -175,6 +175,13 @@ var (
 				Visibility:  "public",
 				Topics:      []string{"gcp", "kubernetes"},
 			},
+			{
+				Name:        "pulumi-civo-redis-flux",
+				Description: "Playing around with Pulumi, Civo and Redis with Flux",
+				License:     "apache-2.0",
+				Visibility:  "public",
+				Topics:      []string{"civo", "kubernetes", "redis", "flux"},
+			},
 		},
 	}
 )
