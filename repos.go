@@ -182,6 +182,15 @@ var (
 				Visibility:  "public",
 				Topics:      []string{"civo", "kubernetes", "redis", "flux"},
 			},
+			{
+				Name:        "azure-devops-tools-extension",
+				Description: "Some missing plugins",
+				License:     "apache-2.0",
+				Visibility:  "public",
+				Issues:      true,
+				Wiki:        true,
+				Topics:      []string{"ado", "azure", "tools"},
+			},
 		},
 	}
 )
