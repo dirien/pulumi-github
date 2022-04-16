@@ -176,8 +176,8 @@ var (
 				Topics:      []string{"gcp", "kubernetes"},
 			},
 			{
-				Name:        "pulumi-civo-redis-flux",
-				Description: "Playing around with Pulumi, Civo and Redis with Flux",
+				Name:        "pulumi-civo-flux-bucket",
+				Description: "Playing around with Pulumi, Civo and Flux with S3 Buckets",
 				License:     "apache-2.0",
 				Visibility:  "public",
 				Topics:      []string{"civo", "kubernetes", "redis", "flux"},
