@@ -191,6 +191,13 @@ var (
 				Wiki:        true,
 				Topics:      []string{"ado", "azure", "tools"},
 			},
+			{
+				Name:        "pulumi-do-flux-webhooks-kcert",
+				Description: "How to create a flux webhook with kcert tls",
+				License:     "apache-2.0",
+				Visibility:  "public",
+				Topics:      []string{"digitalocean", "kubernetes", "flux"},
+			},
 		},
 	}
 )
