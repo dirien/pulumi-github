@@ -198,6 +198,13 @@ var (
 				Visibility:  "public",
 				Topics:      []string{"digitalocean", "kubernetes", "flux"},
 			},
+			{
+				Name:        "rancher-argocd-plugins",
+				Description: "How to use plugins in ArgoCd",
+				License:     "apache-2.0",
+				Visibility:  "public",
+				Topics:      []string{"rancher", "kubernetes", "argocd"},
+			},
 		},
 	}
 )
