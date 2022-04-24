@@ -1,2 +1,4 @@
 config:
   github:owner: dirien
+  github:token:
+    secure: AAABALpb/vtyd1zbjxLdBvp4y7h9+00hR99P00G80wHvhLsioz1PTnSVisdvCVSnZYFeh5osQLcRUBujTTxLnfcU7Ba4Qioc
