@@ -16,6 +16,7 @@ type Repository struct {
 	VulnerabilityAlerts bool
 	Downloads           bool
 	Labels              []Label
+	Archived            bool
 }
 
 type Label struct {
@@ -145,6 +146,7 @@ var (
 				Description: "Deploy a GitOps CI/CD implementation",
 				License:     "apache-2.0",
 				Visibility:  "public",
+				Archived:    true,
 				Topics:      []string{"kubernetes", "ci-cd", "gitops", "pulumi", "tekton"},
 			},
 			{
@@ -204,6 +206,27 @@ var (
 				License:     "apache-2.0",
 				Visibility:  "public",
 				Topics:      []string{"rancher", "kubernetes", "argocd"},
+			},
+			{
+				Name:        "pulumi-linode-flux-jspolicy",
+				Description: "How to use jsPolicy",
+				License:     "apache-2.0",
+				Visibility:  "public",
+				Topics:      []string{"pulumi", "linode", "flux", "kubernetes", "jspolicy"},
+			},
+			{
+				Name:        "devcontainer-iac-kubernetes",
+				Description: "How to create and use a devcontainer",
+				License:     "apache-2.0",
+				Visibility:  "private",
+				Topics:      []string{"devcontainer", "kubernetes", "iac"},
+			},
+			{
+				Name:        "pulumi-java-azure-kubernetes",
+				Description: "Playing with the new Pulumi Java",
+				License:     "apache-2.0",
+				Visibility:  "private",
+				Topics:      []string{"pulumi", "java", "azure"},
 			},
 		},
 	}

@@ -22,6 +22,7 @@ func createGitHubRepository(ctx *pulumi.Context, create *Repository) error {
 		VulnerabilityAlerts: pulumi.Bool(create.VulnerabilityAlerts),
 		HasDownloads:        pulumi.Bool(create.Downloads),
 		Visibility:          pulumi.String(create.Visibility),
+		Archived:            pulumi.Bool(create.Archived),
 	}
 
 	if len(create.Topics) > 0 {
