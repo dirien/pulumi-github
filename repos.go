@@ -228,6 +228,13 @@ var (
 				Visibility:  "private",
 				Topics:      []string{"pulumi", "java", "azure"},
 			},
+			{
+				Name:        "pulumi-azure-flux-weave-ui",
+				Description: "Playing around with the Weave GitOps UI",
+				License:     "apache-2.0",
+				Visibility:  "public",
+				Topics:      []string{"pulumi", "kubernetes", "azure", "gitops", "weave"},
+			},
 		},
 	}
 )
