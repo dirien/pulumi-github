@@ -82,7 +82,7 @@ func createGitHubRepository(ctx *pulumi.Context, create *Repository) error {
 		}
 	}
 
-	ctx.Export(fmt.Sprintf("clone repository-%s", create.Name), repository.HttpCloneUrl)
+	ctx.Export(fmt.Sprintf("clone %s", create.Name), repository.HttpCloneUrl)
 	return nil
 }
 

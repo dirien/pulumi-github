@@ -208,11 +208,11 @@ var (
 				Topics:      []string{"rancher", "kubernetes", "argocd"},
 			},
 			{
-				Name:        "pulumi-linode-flux-jspolicy",
+				Name:        "pulumi-gke-flux-jspolicy",
 				Description: "How to use jsPolicy",
 				License:     "apache-2.0",
 				Visibility:  "public",
-				Topics:      []string{"pulumi", "linode", "flux", "kubernetes", "jspolicy"},
+				Topics:      []string{"pulumi", "gke", "flux", "kubernetes", "jspolicy"},
 			},
 			{
 				Name:        "devcontainer-iac-kubernetes",
