@@ -235,6 +235,14 @@ var (
 				Visibility:  "public",
 				Topics:      []string{"pulumi", "kubernetes", "azure", "gitops", "weave"},
 			},
+			{
+				Name:        "pulumi-civo-kubecon",
+				Description: "Playing around with the Civo Valencia Region",
+				License:     "apache-2.0",
+				Visibility:  "public",
+				Archived:    true,
+				Topics:      []string{"pulumi", "civo", "valencia", "gitops"},
+			},
 		},
 	}
 )
