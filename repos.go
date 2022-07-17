@@ -243,6 +243,13 @@ var (
 				Archived:    true,
 				Topics:      []string{"pulumi", "civo", "valencia", "gitops"},
 			},
+			{
+				Name:        "kubernetes-updatecli",
+				Description: "Playing Updatecli and Kubernetes",
+				License:     "apache-2.0",
+				Visibility:  "public",
+				Topics:      []string{"kubernetes", "updatecli"},
+			},
 		},
 	}
 )
