@@ -250,6 +250,13 @@ var (
 				Visibility:  "public",
 				Topics:      []string{"kubernetes", "updatecli"},
 			},
+			{
+				Name:        "kubernetes-diy-policy-engine",
+				Description: "How to build your own policy engine",
+				License:     "apache-2.0",
+				Visibility:  "public",
+				Topics:      []string{"kubernetes", "diy", "policy-engine", "admission-controller"},
+			},
 		},
 	}
 )
