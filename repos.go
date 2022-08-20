@@ -257,6 +257,14 @@ var (
 				Visibility:  "public",
 				Topics:      []string{"kubernetes", "diy", "policy-engine", "admission-controller"},
 			},
+			{
+				Name:        "lazypulumi",
+				Description: "Pulumi for lazy people",
+				License:     "apache-2.0",
+				Visibility:  "private",
+				Issues:      true,
+				Topics:      []string{"pulumi", "tui"},
+			},
 		},
 	}
 )
