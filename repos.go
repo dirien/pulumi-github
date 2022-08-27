@@ -273,6 +273,14 @@ var (
 				Issues:      true,
 				Topics:      []string{"minectl", "sdk", "golang", "minecraft"},
 			},
+			{
+				Name:        "minectl-operator",
+				Description: "Kubernetes operator for minectl",
+				License:     "apache-2.0",
+				Visibility:  "public",
+				Issues:      true,
+				Topics:      []string{"minectl", "operator", "kubernetes", "golang", "minecraft"},
+			},
 		},
 	}
 )
