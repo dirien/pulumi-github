@@ -265,6 +265,14 @@ var (
 				Issues:      true,
 				Topics:      []string{"pulumi", "tui"},
 			},
+			{
+				Name:        "minectl-sdk",
+				Description: "SDK for every minectl product",
+				License:     "apache-2.0",
+				Visibility:  "public",
+				Issues:      true,
+				Topics:      []string{"minectl", "sdk", "golang", "minecraft"},
+			},
 		},
 	}
 )
