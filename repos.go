@@ -281,6 +281,14 @@ var (
 				Issues:      true,
 				Topics:      []string{"minectl", "operator", "kubernetes", "golang", "minecraft"},
 			},
+			{
+				Name:        "rust-jreleaser",
+				Description: "Playing around with Rust and JReleaser",
+				License:     "apache-2.0",
+				Visibility:  "public",
+				Issues:      true,
+				Topics:      []string{"rust", "jreleaser"},
+			},
 		},
 	}
 )
