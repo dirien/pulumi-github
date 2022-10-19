@@ -289,6 +289,14 @@ var (
 				Issues:      true,
 				Topics:      []string{"rust", "jreleaser"},
 			},
+			{
+				Name:        "trivy-plugin-ui",
+				Description: "Simple Trivy UI plugin written in Rust",
+				License:     "apache-2.0",
+				Visibility:  "public",
+				Issues:      true,
+				Topics:      []string{"trivy", "plugin", "ui", "rust"},
+			},
 		},
 	}
 )
