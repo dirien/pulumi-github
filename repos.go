@@ -297,6 +297,14 @@ var (
 				Issues:      true,
 				Topics:      []string{"trivy", "plugin", "ui", "rust"},
 			},
+			{
+				Name:        "rust-cli",
+				Description: "Playing around with Rust and Clap",
+				License:     "apache-2.0",
+				Visibility:  "public",
+				Issues:      true,
+				Topics:      []string{"rust", "clap"},
+			},
 		},
 	}
 )
