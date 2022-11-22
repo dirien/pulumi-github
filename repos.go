@@ -305,6 +305,14 @@ var (
 				Issues:      true,
 				Topics:      []string{"rust", "clap"},
 			},
+			{
+				Name:        "silly-helm-chart",
+				Description: "A silly Helm chart with some kubernetes resources to play with",
+				License:     "apache-2.0",
+				Visibility:  "public",
+				Issues:      true,
+				Topics:      []string{"helm", "kubernetes"},
+			},
 		},
 	}
 )
