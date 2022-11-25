@@ -313,6 +313,14 @@ var (
 				Issues:      true,
 				Topics:      []string{"helm", "kubernetes"},
 			},
+			{
+				Name:        "pulumi-scala-minecraft",
+				Description: "Playing around with Pulumi, Scala and Minecraft",
+				License:     "apache-2.0",
+				Visibility:  "public",
+				Issues:      true,
+				Topics:      []string{"pulumi", "scala", "minecraft"},
+			},
 		},
 	}
 )
