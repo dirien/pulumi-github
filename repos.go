@@ -321,6 +321,14 @@ var (
 				Issues:      true,
 				Topics:      []string{"pulumi", "scala", "minecraft"},
 			},
+			{
+				Name:        "my-flux-demo-deployments",
+				Description: "Playing around with Flux",
+				License:     "apache-2.0",
+				Visibility:  "public",
+				Issues:      true,
+				Topics:      []string{"flux", "kubernetes"},
+			},
 		},
 	}
 )
