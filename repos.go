@@ -286,7 +286,7 @@ var (
 				Description: "Playing around with Rust and JReleaser",
 				License:     "apache-2.0",
 				Visibility:  "public",
-				Issues:      true,
+				Issues:      false,
 				Topics:      []string{"rust", "jreleaser"},
 			},
 			{
@@ -302,7 +302,7 @@ var (
 				Description: "Playing around with Rust and Clap",
 				License:     "apache-2.0",
 				Visibility:  "public",
-				Issues:      true,
+				Issues:      false,
 				Topics:      []string{"rust", "clap"},
 			},
 			{
@@ -318,7 +318,7 @@ var (
 				Description: "Playing around with Pulumi, Scala and Minecraft",
 				License:     "apache-2.0",
 				Visibility:  "public",
-				Issues:      true,
+				Issues:      false,
 				Topics:      []string{"pulumi", "scala", "minecraft"},
 			},
 			{
@@ -328,6 +328,14 @@ var (
 				Visibility:  "public",
 				Issues:      true,
 				Topics:      []string{"flux", "kubernetes"},
+			},
+			{
+				Name:        "rust-grpc",
+				Description: "Playing around with Rust and GRPC",
+				License:     "apache-2.0",
+				Visibility:  "public",
+				Issues:      false,
+				Topics:      []string{"rust", "grpc"},
 			},
 		},
 	}
