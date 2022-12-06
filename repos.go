@@ -337,6 +337,14 @@ var (
 				Issues:      false,
 				Topics:      []string{"rust", "grpc"},
 			},
+			{
+				Name:        "hello-server",
+				Description: "Simple Server written in different languages and provided as container image",
+				License:     "apache-2.0",
+				Visibility:  "public",
+				Issues:      false,
+				Topics:      []string{"hello", "server", "rust", "golang", "java", "kotlin", "python", "nodejs", "docker"},
+			},
 		},
 	}
 )
