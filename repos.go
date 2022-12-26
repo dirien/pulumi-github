@@ -345,6 +345,14 @@ var (
 				Issues:      false,
 				Topics:      []string{"hello", "server", "rust", "golang", "java", "kotlin", "python", "nodejs", "docker"},
 			},
+			{
+				Name:        "pulumi-vultr",
+				Description: "Pulumi provider for Vultr",
+				License:     "apache-2.0",
+				Visibility:  "public",
+				Issues:      true,
+				Topics:      []string{"pulumi", "vultr"},
+			},
 		},
 	}
 )
