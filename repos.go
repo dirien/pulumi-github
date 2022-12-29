@@ -353,6 +353,14 @@ var (
 				Issues:      true,
 				Topics:      []string{"pulumi", "vultr"},
 			},
+			{
+				Name:        "gpt3ops-rs",
+				Description: "A Rust based Kubernetes operator to ue GPT-3 to explain Kubernetes events",
+				License:     "apache-2.0",
+				Visibility:  "private",
+				Issues:      true,
+				Topics:      []string{"rust", "kubernetes", "operator", "gpt-3"},
+			},
 		},
 	}
 )
