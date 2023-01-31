@@ -361,6 +361,14 @@ var (
 				Issues:      true,
 				Topics:      []string{"rust", "kubernetes", "operator", "gpt-3"},
 			},
+			{
+				Name:        "civo-production-ready-kubernetes",
+				Description: "The repository for the CIVO Navigate talk: How To Build A Production Ready Kubernetes",
+				License:     "apache-2.0",
+				Visibility:  "private",
+				Issues:      false,
+				Topics:      []string{"kubernetes", "civo"},
+			},
 		},
 	}
 )
