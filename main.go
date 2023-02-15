@@ -76,6 +76,7 @@ func createGitHubRepository(ctx *pulumi.Context, create *Repository) error {
 			RepositoryId:         repository.NodeId,
 			Pattern:              pulumi.String("main"),
 			RequireSignedCommits: pulumi.Bool(true),
+			AllowsForcePushes:    pulumi.Bool(create.AllowsForcePushes),
 		})
 		if err != nil {
 			return err
