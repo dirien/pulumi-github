@@ -365,9 +365,17 @@ var (
 				Name:        "civo-production-ready-kubernetes",
 				Description: "The repository for the CIVO Navigate talk: How To Build A Production Ready Kubernetes",
 				License:     "apache-2.0",
-				Visibility:  "private",
+				Visibility:  "public",
 				Issues:      false,
 				Topics:      []string{"kubernetes", "civo"},
+			},
+			{
+				Name:        "pulumi-ms-teams-webhook",
+				Description: "Webhook for Microsoft Teams support in Pulumi Service",
+				License:     "apache-2.0",
+				Visibility:  "public",
+				Issues:      true,
+				Topics:      []string{"pulumi", "microsoft-teams", "webhook"},
 			},
 		},
 	}
