@@ -17,6 +17,7 @@ type Repository struct {
 	Downloads           bool
 	Labels              []Label
 	Archived            bool
+	AllowsForcePushes   bool
 }
 
 type Label struct {
@@ -362,12 +363,13 @@ var (
 				Topics:      []string{"rust", "kubernetes", "operator", "gpt-3"},
 			},
 			{
-				Name:        "civo-production-ready-kubernetes",
-				Description: "The repository for the CIVO Navigate talk: How To Build A Production Ready Kubernetes",
-				License:     "apache-2.0",
-				Visibility:  "public",
-				Issues:      false,
-				Topics:      []string{"kubernetes", "civo"},
+				Name:                "civo-production-ready-kubernetes",
+				Description:         "The repository for the CIVO Navigate talk: How To Build A Production Ready Kubernetes",
+				License:             "apache-2.0",
+				Visibility:          "public",
+				Issues:              false,
+				VulnerabilityAlerts: true,
+				Topics:              []string{"kubernetes", "civo"},
 			},
 			{
 				Name:        "pulumi-ms-teams-webhook",
