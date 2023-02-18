@@ -379,6 +379,14 @@ var (
 				Issues:      true,
 				Topics:      []string{"pulumi", "microsoft-teams", "webhook"},
 			},
+			{
+				Name:        "pulumi-azapi",
+				Description: "Pulumi provider for Azure API Management",
+				License:     "apache-2.0",
+				Visibility:  "public",
+				Issues:      true,
+				Topics:      []string{"pulumi", "azure", "azapi"},
+			},
 		},
 	}
 )
