@@ -387,6 +387,14 @@ var (
 				Issues:      true,
 				Topics:      []string{"pulumi", "azure", "azapi"},
 			},
+			{
+				Name:        "pulumi-port-labs",
+				Description: "Pulumi provider for Port Labs",
+				License:     "apache-2.0",
+				Visibility:  "public",
+				Issues:      true,
+				Topics:      []string{"pulumi", "port-labs"},
+			},
 		},
 	}
 )
