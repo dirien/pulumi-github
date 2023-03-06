@@ -395,6 +395,14 @@ var (
 				Issues:      true,
 				Topics:      []string{"pulumi", "port-labs"},
 			},
+			{
+				Name:        "pulumi-connector",
+				Description: "Pulumi provider for Port Labs Connector",
+				License:     "apache-2.0",
+				Visibility:  "public",
+				Issues:      true,
+				Topics:      []string{"pulumi", "port-labs", "connector"},
+			},
 		},
 	}
 )
