@@ -4,7 +4,7 @@ go 1.19
 
 require (
 	github.com/pulumi/pulumi-github/sdk/v5 v5.5.0
-	github.com/pulumi/pulumi/sdk/v3 v3.56.0
+	github.com/pulumi/pulumi/sdk/v3 v3.57.0
 )
 
 require (
