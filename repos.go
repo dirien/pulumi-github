@@ -313,6 +313,7 @@ var (
 				Visibility:  VISIBILITY_PUBLIC,
 				Issues:      true,
 				Topics:      []string{"helm", "kubernetes"},
+				GHPages:     "gh-pages",
 			},
 			{
 				Name:        "pulumi-scala-minecraft",
