@@ -6,6 +6,13 @@ import (
 	"github.com/pulumi/pulumi/sdk/v3/go/pulumi"
 )
 
+const (
+	VISIBILITY_PUBLIC  = "public"
+	VISIBILITY_PRIVATE = "private"
+
+	APACHE_2_0 = "apache-2.0"
+)
+
 func createGitHubRepository(ctx *pulumi.Context, create *Repository) error {
 
 	repoArgs := &github.RepositoryArgs{
