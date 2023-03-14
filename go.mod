@@ -1,6 +1,6 @@
 module pulumi-github
 
-go 1.19
+go 1.20
 
 require (
 	github.com/pulumi/pulumi-github/sdk/v5 v5.5.0
