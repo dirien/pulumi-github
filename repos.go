@@ -158,13 +158,6 @@ var (
 				Topics:      []string{"quick-bites"},
 			},
 			{
-				Name:        "pulumi-scaleway",
-				Description: "Example of a Pulumi program to manage a Scaleway server",
-				License:     APACHE_2_0,
-				Visibility:  VISIBILITY_PUBLIC,
-				Topics:      []string{"pulumi", "scaleway", "kubernetes"},
-			},
-			{
 				Name:        "vcluster-webinar",
 				Description: "Demo Repository for vcluster Webinar",
 				License:     APACHE_2_0,
@@ -403,6 +396,20 @@ var (
 				Visibility:  VISIBILITY_PUBLIC,
 				Issues:      true,
 				Topics:      []string{"pulumi", "eks", "kubernetes", "golang", "typescript", "python", "csharp", "java"},
+			},
+			{
+				Name:        "pulumi-scaleway-example",
+				Description: "Example of a Pulumi program to manage a Scaleway server",
+				License:     APACHE_2_0,
+				Visibility:  VISIBILITY_PUBLIC,
+				Topics:      []string{"pulumi", "scaleway", "kubernetes"},
+			},
+			{
+				Name:        "pulumi-scaleway",
+				Description: "Pulumi provider for Scaleway",
+				License:     APACHE_2_0,
+				Visibility:  VISIBILITY_PUBLIC,
+				Topics:      []string{"pulumi", "scaleway"},
 			},
 		},
 	}
