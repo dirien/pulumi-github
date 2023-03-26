@@ -411,6 +411,13 @@ var (
 				Visibility:  VISIBILITY_PUBLIC,
 				Topics:      []string{"pulumi", "scaleway"},
 			},
+			{
+				Name:        "pulumi-aks-wasm-spin",
+				Description: "Pulumi program to create an AKS cluster with WASM support and Fermyon Spin",
+				License:     APACHE_2_0,
+				Visibility:  VISIBILITY_PUBLIC,
+				Topics:      []string{"pulumi", "aks", "wasm", "spin", "fermyon", "kubernetes"},
+			},
 		},
 	}
 )
