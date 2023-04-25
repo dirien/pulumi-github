@@ -3,7 +3,7 @@ module pulumi-github
 go 1.20
 
 require (
-	github.com/pulumi/pulumi-github/sdk/v5 v5.7.0
+	github.com/pulumi/pulumi-github/sdk/v5 v5.8.0
 	github.com/pulumi/pulumi/sdk/v3 v3.64.0
 )
 
