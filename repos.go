@@ -382,14 +382,6 @@ var (
 				Topics:      []string{"pulumi", "azure", "azapi"},
 			},
 			{
-				Name:        "pulumi-port-labs",
-				Description: "Pulumi provider for Port Labs",
-				License:     APACHE_2_0,
-				Visibility:  VISIBILITY_PUBLIC,
-				Issues:      true,
-				Topics:      []string{"pulumi", "port-labs"},
-			},
-			{
 				Name:        "parlez-vous-pulumi",
 				Description: "Creating an EKS cluster with Pulumi in different programming languages",
 				License:     APACHE_2_0,
@@ -417,6 +409,13 @@ var (
 				License:     APACHE_2_0,
 				Visibility:  VISIBILITY_PUBLIC,
 				Topics:      []string{"pulumi", "aks", "wasm", "spin", "fermyon", "kubernetes"},
+			},
+			{
+				Name:        "spin-k8s-ms-teams-gpt",
+				Description: "A Fermyon Spin application to use GPT to explain Kubernetes events in Microsoft Teams",
+				License:     APACHE_2_0,
+				Visibility:  VISIBILITY_PRIVATE,
+				Topics:      []string{"spin", "kubernetes", "microsoft-teams", "gpt"},
 			},
 		},
 	}
