@@ -11,6 +11,7 @@ const (
 	VISIBILITY_PRIVATE = "private"
 
 	APACHE_2_0 = "apache-2.0"
+	MPL_2_0    = "mpl-2.0"
 )
 
 func createGitHubRepository(ctx *pulumi.Context, create *Repository) error {

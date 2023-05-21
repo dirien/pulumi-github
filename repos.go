@@ -417,6 +417,13 @@ var (
 				Visibility:  VISIBILITY_PRIVATE,
 				Topics:      []string{"spin", "kubernetes", "microsoft-teams", "gpt"},
 			},
+			{
+				Name:        "devpod-provider-scaleway",
+				Description: "DevPod on Scaleway 🇫🇷",
+				License:     MPL_2_0,
+				Visibility:  VISIBILITY_PUBLIC,
+				Topics:      []string{"devpod", "scaleway"},
+			},
 		},
 	}
 )
