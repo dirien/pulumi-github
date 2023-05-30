@@ -424,6 +424,13 @@ var (
 				Visibility:  VISIBILITY_PUBLIC,
 				Topics:      []string{"devpod", "scaleway"},
 			},
+			{
+				Name:        "devpod-provider-hetzner",
+				Description: "DevPod on Hetzner 🇩🇪 with Rust 🦀",
+				License:     MPL_2_0,
+				Visibility:  VISIBILITY_PUBLIC,
+				Topics:      []string{"devpod", "hetzner"},
+			},
 		},
 	}
 )
