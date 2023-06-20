@@ -431,6 +431,13 @@ var (
 				Visibility:  VISIBILITY_PUBLIC,
 				Topics:      []string{"devpod", "hetzner"},
 			},
+			{
+				Name:        "pulumi-production-ready-kubernetes",
+				Description: "How To Build A Production Ready Kubernetes Cluster With Pulumi",
+				License:     MPL_2_0,
+				Visibility:  VISIBILITY_PRIVATE,
+				Topics:      []string{"pulumi", "kubernetes"},
+			},
 		},
 	}
 )
