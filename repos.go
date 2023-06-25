@@ -435,8 +435,15 @@ var (
 				Name:        "pulumi-production-ready-kubernetes",
 				Description: "How To Build A Production Ready Kubernetes Cluster With Pulumi",
 				License:     MPL_2_0,
-				Visibility:  VISIBILITY_PRIVATE,
+				Visibility:  VISIBILITY_PUBLIC,
 				Topics:      []string{"pulumi", "kubernetes"},
+			},
+			{
+				Name:        "devpod-provider-equinix",
+				Description: "DevPod on Equinix Metal",
+				License:     MPL_2_0,
+				Visibility:  VISIBILITY_PUBLIC,
+				Topics:      []string{"devpod", "equinix"},
 			},
 		},
 	}
