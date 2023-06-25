@@ -438,6 +438,13 @@ var (
 				Visibility:  VISIBILITY_PUBLIC,
 				Topics:      []string{"pulumi", "kubernetes"},
 			},
+			{
+				Name:        "devpod-provider-equinix",
+				Description: "DevPod on Equinix Metal",
+				License:     MPL_2_0,
+				Visibility:  VISIBILITY_PUBLIC,
+				Topics:      []string{"devpod", "equinix"},
+			},
 		},
 	}
 )
