@@ -445,6 +445,13 @@ var (
 				Visibility:  VISIBILITY_PUBLIC,
 				Topics:      []string{"devpod", "equinix"},
 			},
+			{
+				Name:        "pulumi-fly",
+				Description: "Pulumi provider for Fly.io",
+				License:     MPL_2_0,
+				Visibility:  VISIBILITY_PUBLIC,
+				Topics:      []string{"pulumi", "fly"},
+			},
 		},
 	}
 )
