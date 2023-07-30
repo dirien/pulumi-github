@@ -452,6 +452,13 @@ var (
 				Visibility:  VISIBILITY_PUBLIC,
 				Topics:      []string{"pulumi", "fly"},
 			},
+			{
+				Name:        "rust-cross-compile",
+				Description: "Cross compiling Rust for different architectures and operating systems",
+				License:     MPL_2_0,
+				Visibility:  VISIBILITY_PUBLIC,
+				Topics:      []string{"rust", "cross-compile"},
+			},
 		},
 	}
 )
