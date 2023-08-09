@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"github.com/pulumi/pulumi-github/sdk/v5/go/github"
 	"github.com/pulumi/pulumi/sdk/v3/go/pulumi"
+	"github.com/pulumi/pulumi/sdk/v3/go/pulumi/config"
 )
 
 const (
@@ -53,8 +54,10 @@ func createGitHubRepository(ctx *pulumi.Context, create *Repository) error {
 		return err
 	}
 
-	if create.Labels != nil {
-		for _, label := range create.Labels {
+	if create.Labels {
+		var labels []Label
+		config.RequireObject(ctx, "labels", &labels)
+		for _, label := range labels {
 			_, err := github.NewIssueLabel(ctx, fmt.Sprintf("label-%s-%s", create.Name, label.Name), &github.IssueLabelArgs{
 				Color:       pulumi.String(label.Color),
 				Description: pulumi.String(label.Description),
@@ -97,7 +100,9 @@ func createGitHubRepository(ctx *pulumi.Context, create *Repository) error {
 
 func main() {
 	pulumi.Run(func(ctx *pulumi.Context) error {
-		for _, repo := range repos.Items {
+		var repos []Repository
+		config.RequireObject(ctx, "repositories", &repos)
+		for _, repo := range repos {
 			err := createGitHubRepository(ctx, &repo)
 			if err != nil {
 				return err
