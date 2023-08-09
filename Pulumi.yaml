@@ -467,3 +467,10 @@ config:
       topics:
         - "pulumi"
         - "backstage"
+    - name: "pulumi-ovh"
+      description: "Pulumi provider for OVHcloud"
+      license: "mpl-2.0"
+      visibility: "public"
+      topics:
+        - "pulumi"
+        - "ovh"
