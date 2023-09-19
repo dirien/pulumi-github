@@ -462,8 +462,15 @@ config:
     - name: "pulumi-backstage-plugin"
       description: "Pulumi plugin for Backstage"
       license: "mpl-2.0"
-      visibility: "public"
+      visibility: "private"
       issues: true
       topics:
         - "pulumi"
         - "backstage"
+    - name: "kubecon-china-2023-tekton"
+      description: "Tekton Demo for KubeCon China 2023"
+      license: "mpl-2.0"
+      visibility: "public"
+      topics:
+        - "tekton"
+        - "kubernetes"
