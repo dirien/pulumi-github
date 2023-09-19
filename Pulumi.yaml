@@ -462,7 +462,7 @@ config:
     - name: "pulumi-backstage-plugin"
       description: "Pulumi plugin for Backstage"
       license: "mpl-2.0"
-      visibility: "private"
+      visibility: "public"
       issues: true
       topics:
         - "pulumi"
