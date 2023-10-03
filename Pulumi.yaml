@@ -427,7 +427,7 @@ config:
     - name: "devpod-provider-hetzner"
       description: "DevPod on Hetzner 🇩🇪 with Rust 🦀"
       license: "mpl-2.0"
-      visibility: "public"
+      visibility: "private"
       topics:
         - "devpod"
         - "hetzner"
@@ -474,3 +474,10 @@ config:
       topics:
         - "tekton"
         - "kubernetes"
+    - name: "devpod-provider-exoscale"
+      description: "DevPod on Exoscale 🇨🇭"
+      license: "mpl-2.0"
+      visibility: "public"
+      topics:
+      - "devpod"
+      - "exoscale"
