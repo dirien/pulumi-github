@@ -421,6 +421,7 @@ config:
     description: "DevPod on Scaleway 🇫🇷"
     license: "mpl-2.0"
     visibility: "public"
+    labels: true
     topics:
     - "devpod"
     - "scaleway"
@@ -442,6 +443,7 @@ config:
     description: "DevPod on Equinix Metal"
     license: "mpl-2.0"
     visibility: "public"
+    labels: true
     topics:
     - "devpod"
     - "equinix"
@@ -449,6 +451,7 @@ config:
     description: "Pulumi provider for Fly.io"
     license: "mpl-2.0"
     visibility: "public"
+    labels: true
     topics:
     - "pulumi"
     - "fly"
@@ -478,6 +481,7 @@ config:
     description: "DevPod on Exoscale 🇨🇭"
     license: "mpl-2.0"
     visibility: "public"
+    labels: true
     topics:
     - "devpod"
     - "exoscale"
@@ -485,6 +489,7 @@ config:
     description: "Pulumi Exoscale Workshop"
     license: "mpl-2.0"
     visibility: "public"
+    labels: true
     topics:
     - "pulumi"
     - "exoscale"
