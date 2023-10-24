@@ -1,12 +1,13 @@
 name: Pulumi
 
 on:
-  push:
-    tags:
-      - '*'
-  pull_request:
-    paths-ignore:
-      - '**/.github/'
+  workflow_dispatch:
+#  push:
+#    tags:
+#      - '*'
+#  pull_request:
+#    paths-ignore:
+#      - '**/.github/'
 
 jobs:
   preview:
