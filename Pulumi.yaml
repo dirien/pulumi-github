@@ -493,3 +493,11 @@ config:
     topics:
     - "pulumi"
     - "exoscale"
+  - name: "pulumi-aws-workshop"
+    description: "Pulumi AWS Workshop"
+    license: "mpl-2.0"
+    visibility: "public"
+    labels: true
+    topics:
+    - "pulumi"
+    - "aws"
