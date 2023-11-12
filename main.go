@@ -32,6 +32,10 @@ func createGitHubRepository(ctx *pulumi.Context, create *Repository) error {
 		HasDownloads:        pulumi.Bool(create.Downloads),
 		Visibility:          pulumi.String(create.Visibility),
 		Archived:            pulumi.Bool(create.Archived),
+		Template: github.RepositoryTemplateArgs{
+			Owner:      pulumi.String(create.Owner),
+			Repository: pulumi.String(create.Name),
+		},
 	}
 
 	if len(create.Topics) > 0 {

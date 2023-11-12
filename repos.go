@@ -18,6 +18,7 @@ type Repository struct {
 	Labels              bool
 	Archived            bool
 	AllowsForcePushes   bool
+	Owner               string
 }
 
 type Label struct {
