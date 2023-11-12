@@ -41,21 +41,25 @@ config:
     license: "apache-2.0"
     gitIgnoreTemplate: "Go"
     visibility: "public"
+    owner: "dirien"
     collaborators:
     - "ediri"
   - name: ".github"
     description: "Repository for default files"
     license: "apache-2.0"
     visibility: "public"
+    owner: "dirien"
   - name: "test"
     description: "Test Repository"
     license: "apache-2.0"
     visibility: "private"
+    owner: "dirien"
     labels: true
   - name: "gophercon-turkey-2021"
     description: "My GopherCon Turkey 2021 Demo repo"
     license: "apache-2.0"
     visibility: "public"
+    owner: "dirien"
     issues: true
     collaborators:
     - "ediri"
@@ -63,6 +67,7 @@ config:
     description: "K3SAIR 🏴‍☠️️ ('Corsair') is a cli for the installation of k3s in an Air-Gapped environment."
     license: "apache-2.0"
     visibility: "public"
+    owner: "dirien"
     issues: true
     wiki: true
     topics:
@@ -75,6 +80,7 @@ config:
     description: "Pulumi program to manage my GitHub repositories"
     license: "apache-2.0"
     visibility: "public"
+    owner: "dirien"
     topics:
     - "pulumi"
     - "github"
@@ -84,6 +90,7 @@ config:
     description: "tfu is a terraform helper to update the providers."
     license: "apache-2.0"
     visibility: "public"
+    owner: "dirien"
     issues: true
     wiki: true
     topics:
@@ -95,6 +102,7 @@ config:
     description: "Deploy a GitOps CI/CD implementation"
     license: "apache-2.0"
     visibility: "public"
+    owner: "dirien"
     archived: true
     topics:
     - "kubernetes"
@@ -106,12 +114,14 @@ config:
     description: "Quick Bites of different technologies"
     license: "apache-2.0"
     visibility: "public"
+    owner: "dirien"
     topics:
     - "quick-bites"
   - name: "vcluster-webinar"
     description: "Demo Repository for vcluster Webinar"
     license: "apache-2.0"
     visibility: "public"
+    owner: "dirien"
     topics:
     - "vcluster"
     - "kubernetes"
@@ -119,6 +129,7 @@ config:
     description: "Playing around with GCP"
     license: "apache-2.0"
     visibility: "public"
+    owner: "dirien"
     topics:
     - "gcp"
     - "kubernetes"
@@ -126,6 +137,7 @@ config:
     description: "Playing around with Pulumi, Civo and Flux with S3 Buckets"
     license: "apache-2.0"
     visibility: "public"
+    owner: "dirien"
     topics:
     - "civo"
     - "kubernetes"
@@ -135,6 +147,7 @@ config:
     description: "Some missing plugins"
     license: "apache-2.0"
     visibility: "public"
+    owner: "dirien"
     issues: true
     wiki: true
     topics:
@@ -145,6 +158,7 @@ config:
     description: "How to create a flux webhook with kcert tls"
     license: "apache-2.0"
     visibility: "public"
+    owner: "dirien"
     topics:
     - "digitalocean"
     - "kubernetes"
@@ -153,6 +167,7 @@ config:
     description: "How to use plugins in ArgoCd"
     license: "apache-2.0"
     visibility: "public"
+    owner: "dirien"
     topics:
     - "rancher"
     - "kubernetes"
@@ -161,6 +176,7 @@ config:
     description: "How to use jsPolicy"
     license: "apache-2.0"
     visibility: "public"
+    owner: "dirien"
     topics:
     - "pulumi"
     - "gke"
@@ -171,6 +187,7 @@ config:
     description: "How to create and use a devcontainer"
     license: "apache-2.0"
     visibility: "private"
+    owner: "dirien"
     topics:
     - "devcontainer"
     - "kubernetes"
@@ -179,6 +196,7 @@ config:
     description: "Playing with the new Pulumi Java"
     license: "apache-2.0"
     visibility: "private"
+    owner: "dirien"
     topics:
     - "pulumi"
     - "java"
@@ -187,6 +205,7 @@ config:
     description: "Playing around with the Weave GitOps UI"
     license: "apache-2.0"
     visibility: "public"
+    owner: "dirien"
     topics:
     - "pulumi"
     - "kubernetes"
@@ -198,6 +217,7 @@ config:
     license: "apache-2.0"
     visibility: "public"
     archived: true
+    owner: "dirien"
     topics:
     - "pulumi"
     - "civo"
@@ -207,6 +227,7 @@ config:
     description: "Playing Updatecli and Kubernetes"
     license: "apache-2.0"
     visibility: "public"
+    owner: "dirien"
     topics:
     - "kubernetes"
     - "updatecli"
@@ -214,6 +235,7 @@ config:
     description: "How to build your own policy engine"
     license: "apache-2.0"
     visibility: "public"
+    owner: "dirien"
     topics:
     - "kubernetes"
     - "diy"
@@ -224,6 +246,7 @@ config:
     license: "apache-2.0"
     visibility: "private"
     issues: true
+    owner: "dirien"
     topics:
     - "pulumi"
     - "tui"
@@ -232,6 +255,7 @@ config:
     license: "apache-2.0"
     visibility: "public"
     issues: true
+    owner: "dirien"
     topics:
     - "minectl"
     - "sdk"
@@ -242,6 +266,7 @@ config:
     license: "apache-2.0"
     visibility: "public"
     issues: true
+    owner: "dirien"
     topics:
     - "minectl"
     - "operator"
@@ -253,6 +278,7 @@ config:
     license: "apache-2.0"
     visibility: "public"
     issues: false
+    owner: "dirien"
     topics:
     - "rust"
     - "jreleaser"
@@ -261,6 +287,7 @@ config:
     license: "apache-2.0"
     visibility: "public"
     issues: true
+    owner: "dirien"
     topics:
     - "trivy"
     - "plugin"
@@ -271,6 +298,7 @@ config:
     license: "apache-2.0"
     visibility: "public"
     issues: false
+    owner: "dirien"
     topics:
     - "rust"
     - "clap"
@@ -279,6 +307,7 @@ config:
     license: "apache-2.0"
     visibility: "public"
     issues: true
+    owner: "dirien"
     topics:
     - "helm"
     - "kubernetes"
@@ -288,6 +317,7 @@ config:
     license: "apache-2.0"
     visibility: "public"
     issues: false
+    owner: "dirien"
     topics:
     - "pulumi"
     - "scala"
@@ -297,6 +327,7 @@ config:
     license: "apache-2.0"
     visibility: "public"
     issues: true
+    owner: "dirien"
     topics:
     - "flux"
     - "kubernetes"
@@ -305,6 +336,7 @@ config:
     license: "apache-2.0"
     visibility: "public"
     issues: false
+    owner: "dirien"
     topics:
     - "rust"
     - "grpc"
@@ -313,6 +345,7 @@ config:
     license: "apache-2.0"
     visibility: "public"
     issues: false
+    owner: "dirien"
     topics:
     - "hello"
     - "server"
@@ -328,6 +361,7 @@ config:
     license: "apache-2.0"
     visibility: "public"
     issues: true
+    owner: "dirien"
     topics:
     - "pulumi"
     - "vultr"
@@ -336,6 +370,7 @@ config:
     license: "apache-2.0"
     visibility: "private"
     issues: true
+    owner: "dirien"
     topics:
     - "rust"
     - "kubernetes"
@@ -347,6 +382,7 @@ config:
     visibility: "public"
     issues: false
     vulnerabilityAlerts: true
+    owner: "dirien"
     topics:
     - "kubernetes"
     - "civo"
@@ -355,6 +391,7 @@ config:
     license: "apache-2.0"
     visibility: "public"
     issues: true
+    owner: "dirien"
     topics:
     - "pulumi"
     - "microsoft-teams"
@@ -364,6 +401,7 @@ config:
     license: "apache-2.0"
     visibility: "public"
     issues: true
+    owner: "dirien"
     topics:
     - "pulumi"
     - "azure"
@@ -373,6 +411,7 @@ config:
     license: "apache-2.0"
     visibility: "public"
     issues: true
+    owner: "dirien"
     topics:
     - "pulumi"
     - "eks"
@@ -386,6 +425,7 @@ config:
     description: "Example of a Pulumi program to manage a Scaleway server"
     license: "apache-2.0"
     visibility: "public"
+    owner: "dirien"
     topics:
     - "pulumi"
     - "scaleway"
@@ -394,6 +434,7 @@ config:
     description: "Pulumi provider for Scaleway"
     license: "apache-2.0"
     visibility: "public"
+    owner: "dirien"
     topics:
     - "pulumi"
     - "scaleway"
@@ -401,6 +442,7 @@ config:
     description: "Pulumi program to create an AKS cluster with WASM support and Fermyon Spin"
     license: "apache-2.0"
     visibility: "public"
+    owner: "dirien"
     topics:
     - "pulumi"
     - "aks"
@@ -412,6 +454,7 @@ config:
     description: "A Fermyon Spin application to use GPT to explain Kubernetes events in Microsoft Teams"
     license: "apache-2.0"
     visibility: "private"
+    owner: "dirien"
     topics:
     - "spin"
     - "kubernetes"
@@ -422,6 +465,7 @@ config:
     license: "mpl-2.0"
     visibility: "public"
     labels: true
+    owner: "dirien"
     topics:
     - "devpod"
     - "scaleway"
@@ -429,6 +473,7 @@ config:
     description: "DevPod on Hetzner 🇩🇪 with Rust 🦀"
     license: "mpl-2.0"
     visibility: "private"
+    owner: "dirien"
     topics:
     - "devpod"
     - "hetzner"
@@ -436,6 +481,7 @@ config:
     description: "How To Build A Production Ready Kubernetes Cluster With Pulumi"
     license: "mpl-2.0"
     visibility: "public"
+    owner: "dirien"
     topics:
     - "pulumi"
     - "kubernetes"
@@ -444,6 +490,7 @@ config:
     license: "mpl-2.0"
     visibility: "public"
     labels: true
+    owner: "dirien"
     topics:
     - "devpod"
     - "equinix"
@@ -452,6 +499,7 @@ config:
     license: "mpl-2.0"
     visibility: "public"
     labels: true
+    owner: "dirien"
     topics:
     - "pulumi"
     - "fly"
@@ -459,6 +507,7 @@ config:
     description: "Cross compiling Rust for different architectures and operating systems"
     license: "mpl-2.0"
     visibility: "public"
+    owner: "dirien"
     topics:
     - "rust"
     - "cross-compile"
@@ -467,6 +516,7 @@ config:
     license: "mpl-2.0"
     visibility: "private"
     issues: true
+    owner: "dirien"
     topics:
     - "pulumi"
     - "backstage"
@@ -474,6 +524,7 @@ config:
     description: "Tekton Demo for KubeCon China 2023"
     license: "mpl-2.0"
     visibility: "public"
+    owner: "dirien"
     topics:
     - "tekton"
     - "kubernetes"
@@ -482,6 +533,7 @@ config:
     license: "mpl-2.0"
     visibility: "public"
     labels: true
+    owner: "dirien"
     topics:
     - "devpod"
     - "exoscale"
@@ -490,6 +542,7 @@ config:
     license: "mpl-2.0"
     visibility: "public"
     labels: true
+    owner: "dirien"
     topics:
     - "pulumi"
     - "exoscale"
@@ -498,6 +551,7 @@ config:
     license: "mpl-2.0"
     visibility: "public"
     labels: true
+    owner: "dirien"
     topics:
     - "pulumi"
     - "aws"
@@ -506,6 +560,7 @@ config:
     license: "mpl-2.0"
     visibility: "public"
     labels: true
+    owner: "my-backstage-demo"
     topics:
     - "backstage"
     - "infrastructure"
