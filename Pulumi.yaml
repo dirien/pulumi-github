@@ -566,3 +566,12 @@ config:
     - "infrastructure"
     - "provisioning"
     - "templates"
+  - name: pulumi-qovery
+    description: "Pulumi provider for Qovery"
+    license: "mpl-2.0"
+    visibility: "public"
+    labels: true
+    owner: "dirien"
+    topics:
+    - "pulumi"
+    - "qovery"
