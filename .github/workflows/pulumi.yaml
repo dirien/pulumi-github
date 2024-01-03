@@ -19,7 +19,7 @@ jobs:
         with:
           go-version: 1.21.x
       - run: go mod download
-      - uses: pulumi/actions@v4
+      - uses: pulumi/actions@v5
         with:
           command: preview
           stack-name: dev
@@ -39,7 +39,7 @@ jobs:
         with:
           go-version: 1.21.x
       - run: go mod download
-      - uses: pulumi/actions@v4
+      - uses: pulumi/actions@v5
         with:
           command: up
           stack-name: dev
