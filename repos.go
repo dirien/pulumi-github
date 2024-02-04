@@ -11,7 +11,8 @@ type Repository struct {
 	Wiki                bool
 	Collaborators       []string
 	Topics              []string
-	GHPages             string `yaml:"ghpages"`
+	PagesBranch         string
+	PagesPath           string
 	Projects            bool
 	VulnerabilityAlerts bool
 	Downloads           bool
