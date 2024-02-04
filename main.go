@@ -32,20 +32,18 @@ func createGitHubRepository(ctx *pulumi.Context, create *Repository) error {
 		HasDownloads:        pulumi.Bool(create.Downloads),
 		Visibility:          pulumi.String(create.Visibility),
 		Archived:            pulumi.Bool(create.Archived),
-		Template: github.RepositoryTemplateArgs{
-			Owner:      pulumi.String(create.Owner),
-			Repository: pulumi.String(create.Name),
-		},
 	}
 
 	if len(create.Topics) > 0 {
 		repoArgs.Topics = pulumi.ToStringArray(create.Topics)
 	}
 
-	if create.GHPages != "" {
+	fmt.Println(create.PagesPath, create.PagesBranch)
+	if create.PagesPath != "" && create.PagesBranch != "" {
 		repoArgs.Pages = &github.RepositoryPagesArgs{
 			Source: &github.RepositoryPagesSourceArgs{
-				Branch: pulumi.String(create.GHPages),
+				Branch: pulumi.String(create.PagesBranch),
+				Path:   pulumi.String(create.PagesPath),
 			},
 		}
 	}

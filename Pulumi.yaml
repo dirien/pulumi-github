@@ -1,8 +1,8 @@
 name: pulumi-github
 runtime: go
 description: A minimal Go Pulumi program
-options:
-  refresh: always
+#options:
+#  refresh: always
 config:
   labels:
   - name: ":bug: bug"
@@ -75,7 +75,8 @@ config:
     - "golang"
     - "cli"
     - "k3s"
-    ghPages: "gh-pages"
+    pagesBranch: "gh-pages"
+    pagesPath: "/"
   - name: "pulumi-github"
     description: "Pulumi program to manage my GitHub repositories"
     license: "apache-2.0"
@@ -311,7 +312,8 @@ config:
     topics:
     - "helm"
     - "kubernetes"
-    ghpages: "gh-pages"
+    pagesBranch: "gh-pages"
+    pagesPath: "/"
   - name: "pulumi-scala-minecraft"
     description: "Playing around with Pulumi, Scala and Minecraft"
     license: "apache-2.0"
@@ -552,6 +554,8 @@ config:
     visibility: "public"
     labels: true
     owner: "dirien"
+    pagesBranch: "main"
+    pagesPath: "/"
     topics:
     - "pulumi"
     - "aws"
@@ -566,7 +570,7 @@ config:
     - "infrastructure"
     - "provisioning"
     - "templates"
-  - name: pulumi-qovery
+  - name: "pulumi-qovery"
     description: "Pulumi provider for Qovery"
     license: "mpl-2.0"
     visibility: "public"
@@ -575,3 +579,16 @@ config:
     topics:
     - "pulumi"
     - "qovery"
+
+  - name: "pulumi-backstage-azure-workshop"
+    description: "Pulumi Backstage Azure Workshop"
+    license: "mpl-2.0"
+    visibility: "public"
+    labels: false
+    owner: "dirien"
+    pagesBranch: "main"
+    pagesPath: "/"
+    topics:
+    - "pulumi"
+    - "backstage"
+    - "azure"
