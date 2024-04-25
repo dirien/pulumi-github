@@ -5,6 +5,9 @@ description: A minimal Go Pulumi program
 #  refresh: always
 config:
   labels:
+  - name: "kind/enhancement"
+    description: "New feature or request"
+    color: "84b6eb"
   - name: ":bug: bug"
     description: "Something isn't working"
     color: "f29513"
@@ -500,6 +503,7 @@ config:
     description: "Pulumi provider for Fly.io"
     license: "mpl-2.0"
     visibility: "public"
+    issues: true
     labels: true
     owner: "dirien"
     topics:
@@ -570,12 +574,14 @@ config:
     - "infrastructure"
     - "provisioning"
     - "templates"
+
   - name: "pulumi-qovery"
     description: "Pulumi provider for Qovery"
     license: "mpl-2.0"
     visibility: "public"
     labels: true
     owner: "dirien"
+    issues: true
     topics:
     - "pulumi"
     - "qovery"
@@ -592,3 +598,14 @@ config:
     - "pulumi"
     - "backstage"
     - "azure"
+
+  - name: "pulumi-akp"
+    description: "Pulumi provider for managing Akuity Platform resources"
+    license: "mpl-2.0"
+    visibility: "public"
+    labels: true
+    owner: "dirien"
+    issues: true
+    topics:
+    - "pulumi"
+    - "akp"
