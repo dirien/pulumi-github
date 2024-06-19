@@ -102,6 +102,7 @@ config:
     - "terraform"
     - "iac"
     labels: true
+    archived: true
   - name: "digitalocean-kubernetes-challenge"
     description: "Deploy a GitOps CI/CD implementation"
     license: "apache-2.0"
