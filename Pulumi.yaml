@@ -549,6 +549,7 @@ config:
     visibility: "public"
     labels: true
     owner: "dirien"
+    archived: true
     topics:
     - "pulumi"
     - "exoscale"

@@ -38,7 +38,6 @@ func createGitHubRepository(ctx *pulumi.Context, create *Repository) error {
 		repoArgs.Topics = pulumi.ToStringArray(create.Topics)
 	}
 
-	fmt.Println(create.PagesPath, create.PagesBranch)
 	if create.PagesPath != "" && create.PagesBranch != "" {
 		repoArgs.Pages = &github.RepositoryPagesArgs{
 			Source: &github.RepositoryPagesSourceArgs{
