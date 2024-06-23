@@ -611,3 +611,13 @@ config:
     topics:
     - "pulumi"
     - "akp"
+
+  - name: "learning-hebrew"
+    description: "Learning Hebrew"
+    license: "mpl-2.0"
+    visibility: private
+    labels: true
+    owner: "dirien"
+    topics:
+    - "hebrew"
+    - "learning"
