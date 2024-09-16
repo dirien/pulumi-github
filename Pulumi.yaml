@@ -621,3 +621,13 @@ config:
     topics:
     - "hebrew"
     - "learning"
+  - name: "progressive-infrastructure-delivery-using-kargo-and-argo-cd"
+    description: "Progressive Infrastructure Delivery using Kargo and Argo CD"
+    license: "mpl-2.0"
+    visibility: "public"
+    labels: true
+    owner: "dirien"
+    topics:
+    - "kargo"
+    - "argo-cd"
+    - "progressive-delivery"
