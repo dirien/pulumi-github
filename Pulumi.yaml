@@ -436,6 +436,7 @@ config:
     - "pulumi"
     - "scaleway"
     - "kubernetes"
+    archived: true
   - name: "pulumi-scaleway"
     description: "Pulumi provider for Scaleway"
     license: "apache-2.0"
@@ -488,6 +489,7 @@ config:
     license: "mpl-2.0"
     visibility: "public"
     owner: "dirien"
+    archived: true
     topics:
     - "pulumi"
     - "kubernetes"
@@ -560,6 +562,7 @@ config:
     visibility: "public"
     labels: true
     owner: "dirien"
+    archived: true
     pagesBranch: "main"
     pagesPath: "/"
     topics:
@@ -584,6 +587,7 @@ config:
     labels: true
     owner: "dirien"
     issues: true
+    archived: true
     topics:
     - "pulumi"
     - "qovery"
@@ -608,6 +612,7 @@ config:
     labels: true
     owner: "dirien"
     issues: true
+    archived: true
     topics:
     - "pulumi"
     - "akp"
@@ -631,3 +636,13 @@ config:
     - "kargo"
     - "argo-cd"
     - "progressive-delivery"
+  - name: "pulumi-esc-csi-provider"
+    description: "A CSI provider for Pulumi ESC"
+    license: "mpl-2.0"
+    visibility: "public"
+    labels: true
+    owner: "dirien"
+    topics:
+    - "pulumi"
+    - "esc"
+    - "csi"
