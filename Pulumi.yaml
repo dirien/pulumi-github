@@ -646,3 +646,14 @@ config:
     - "pulumi"
     - "esc"
     - "csi"
+  - name: "next-level-powers-enhance-your-idp-with-the-wasm-and-dapr-hero-team-up"
+    description: "Next Level Powers: Enhance Your IDP with the WASM and Dapr Hero Team Up"
+    license: "mpl-2.0"
+    visibility: "public"
+    labels: true
+    owner: "dirien"
+    topics:
+    - "powers"
+    - "idp"
+    - "wasm"
+    - "dapr"
