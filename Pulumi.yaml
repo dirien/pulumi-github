@@ -497,6 +497,7 @@ config:
     description: "DevPod on Equinix Metal"
     license: "mpl-2.0"
     visibility: "public"
+    archived: true
     labels: true
     owner: "dirien"
     topics:
