@@ -658,3 +658,23 @@ config:
     - "idp"
     - "wasm"
     - "dapr"
+
+  - name: "cfgmgmtcamp-2025-discover-pulumi-through-hands-on-practice"
+    description: "CfgMgmtCamp 2025 Ghent: Discover Pulumi Through Hands-On Practice"
+    license: "mpl-2.0"
+    visibility: "public"
+    labels: true
+    owner: "dirien"
+    topics:
+    - "cfgmgmtcamp"
+    - "pulumi"
+
+  - name: "oslo-pug-discover-pulumi-through-hands-on-practice"
+    description: "Oslo PUG: Discover Pulumi Through Hands-On Practice"
+    license: "mpl-2.0"
+    visibility: "public"
+    labels: true
+    owner: "dirien"
+    topics:
+    - "oslo-pug"
+    - "pulumi"
