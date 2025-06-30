@@ -1,4 +1,2 @@
-config:
-  github:owner: dirien
-  github:token:
-    secure: AAABAHnINWIOmE4yFVe4rsWdLtCRLKjQA3phpMniRRByJ4Lvb3VLqNZgoquEDafeazYm529ZLZ8UM/CjR8/X80QqcrCbQLVm
+environment:
+- pulumi-github/repos
